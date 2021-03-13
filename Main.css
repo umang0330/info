@@ -8,6 +8,7 @@
     position: absolute;
     top: 25%;
     left: 70%;
+    display: flex;
 }
 
 .head {
@@ -54,6 +55,7 @@ fieldset {
     width: 14px;
     height: 100px;
     margin-left: 11%;
+    display: flex;
 }
 
 .lineup2 {
@@ -72,6 +74,7 @@ fieldset {
     position: absolute;
     left: 52.85%;
     margin-bottom: 0%;
+    display: flex;
 }
 
 
@@ -111,6 +114,7 @@ fieldset {
     position: absolute;
     margin-top: 15%;
     margin-left: 60%;
+    display: flex;
 }
 
 .linedn2 {
@@ -185,4 +189,36 @@ fieldset {
     position: absolute;
     margin-top: 7%;
     margin-left: 10%;
+}
+
+.linebl2 {
+    background-color: darkblue;
+    width: 14px;
+    height: 115px;
+    position: absolute;
+    margin-left: 55.15%;
+    margin-top: 7%;
+}
+
+.bt {
+    background-color: violet;
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    left: 52%;
+    margin-top: 14%;
+    text-align: center;
+    padding-top: 10PX;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    border: 2px;
+    border-style: ridge;
+    transition: 1s;
+}
+
+.bt:hover {
+    background-color: blueviolet;
+    color: blanchedalmond;
+    -webkit-box-shadow: 0 0 20px 10px white;
 }
