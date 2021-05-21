@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="development.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web\css\all.css">
+
+    <style>
+        #upper {
+            background-color: #EA2027;
+            text-align: center;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            color: white;
+            display: none;
+            box-shadow: 0px 10px 19px 5px black;
+            border-bottom: 2px solid white;
+        }
+        
+        #upper .row h1 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+    </style>
+
+
+    <title>Development</title>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loading"></div>
+
+
+
+    <!-- Main Content------------------------------------------------------ -->
+    <div class="container-fluid py-5 sticky-top" id="upper">
+        <div class="row">
+            <h1><i class="fas fa-laptop"></i> Development</h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center py-2" id="row1">
+                Here are some animations which I have made:
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4 d-flex justify-content-center" id="box1">
+                <video src="videos/Text Animation.mp4" controls height="100px" width="200px"></video>
+            </div>
+
+            <div class="col-md-4  d-flex justify-content-center my-2 my-md-0" id="box2">
+                <video src="videos/Packman.mp4" controls height="100px" width="200px"></video>
+            </div>
+
+            <div class="col-md-4  d-flex justify-content-center" id="box3">
+                <video src="videos/Super Mario.mp4" controls height="100px" width="200px"></video>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 d-flex justify-content-center py-2" id="row2">
+                Graphics:
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 d-flex justify-content-center" id="box1">
+                <img src="image/gerb_back1.jpg" height="100px" width="200px" alt="" srcset="">
+            </div>
+
+            <div class="col-md-4  d-flex justify-content-center my-2 my-md-0" id="box2">
+                <img src="image/hariholi2.jpg" height="100px" width="200px" alt="" srcset="">
+            </div>
+
+            <div class="col-md-4  d-flex justify-content-center" id="box3">
+                <img src="image/hhp_3.jpg" height="100px" width="200px" alt="" srcset="">
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <h1>Logo , Banner Design:</h1>
+                <p>Besides the web development I also do the Graphics designing. Which includes logo designing, banner designing & video editing. The example of Logo and banner are above. And example of web designing you are seeing <i class="fa fa-grin-alt"></i></p>
+
+                <h2>Software I Use:</h2>
+                <p>The software I use for web designing are VS Code & VS 2019. For graphics I use Adobe photoshop & Illustrator."Before software can be reuasable, it has first to usable " </p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex justify-content-center" id="">
+                    <img src="image/vscode.jpeg" height="100px" width="150px" alt="" srcset="">
+                </div>
+                <div class="col-md-3 d-flex justify-content-center" id="">
+                    <img src="image/vs2019.png" height="100px" width="100px" alt="" srcset="">
+                </div>
+                <div class="col-md-3 d-flex justify-content-center my-1 my-md-0" id="">
+                    <img src="image/photoshop.png" height="100px" width="100px" alt="" srcset="">
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center my-1 my-md-0" id="">
+                    <img src="image/illustrator.png" height="100px" width="100px" alt="" srcset="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid clearfix  mt-4" id="footer">
+        <div class="row " id="home">
+            <div class="col-md-5 offset-md-1 py-2" onclick="backhome()" id="homeicon">
+                <i class="fas fa-home"></i> Home</div>
+            <div class="col-md-5 mx-md-2 my-2 my-md-0 py-2" id="nexticon" onclick="more()">
+                <i class="fas fa-arrow-right"></i> Next</div>
+        </div>
+
+        <div class="row mt-1 d-flex justify-content-center">
+            <div class="col-md-5 mx-md-2  py-2" id="previousicon" onclick="aboutme()">
+                <i class="fas fa-arrow-left"></i> Previous</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 pt-3" id="copyright">
+                <i class="fas fa-copyright"></i> Developed by Vector
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+    function backhome() {
+        window.location = "index.html"
+    }
+
+    function more() {
+        window.location = "information.html"
+    }
+
+    function aboutme() {
+        window.location = "aboutme.html"
+    }
+
+
+    setTimeout(lod, 2000);
+    var pr = document.getElementById("loading");
+    var upr = document.getElementById("upper")
+
+    function lod() {
+        pr.style.display = "none";
+        upr.style.display = "block";
+
+    }
+</script>
