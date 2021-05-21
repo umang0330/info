@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Umang</title>
+
+    <link rel="stylesheet" href="contactme.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web\css\all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        #upper {
+            background-color: #485460;
+            text-align: center;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            color: white;
+            display: none;
+            box-shadow: 0px 10px 19px 5px black;
+            border-bottom: 2px solid white;
+        }
+        
+        #upper .row h1 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loading"></div>
+
+
+    <!-- Main Content------------------------------------------------------ -->
+    <div class="container-fluid py-5 sticky-top" id="upper">
+        <div class="row">
+            <h1> <i class="fas fa-id-badge"></i> Contact Me</h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row" id="all">
+            <div class="col-sm-7 d-flex justify-content-center m-auto" id="formcont1">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-check" placeholder="Enter Name" id="tb1">
+                </div>
+
+            </div>
+
+            <div class="col-sm-7 d-flex justify-content-center m-auto" id="formcont2">
+
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-check" placeholder="Enter Email" id="tb2">
+                </div>
+            </div>
+
+
+            <div class="col-sm-7 d-flex justify-content-center m-auto" id="formcont3">
+
+                <div class="form-group">
+                    <label for="">Comment</label>
+                    <textarea class="form-check" name="" id="tb3" cols="30" rows="5" placeholder="Please comment if you like site"></textarea>
+                </div>
+
+            </div>
+            <div class="col-sm-7 m-auto  d-flex justify-content-center py-3" id="formcont3">
+                <button onclick="submit()">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid clearfix " id="footer">
+        <div class="row " id="home">
+            <div class="col-md-5 offset-md-1 py-2" onclick="backhome()" id="homeicon">
+                <i class="fas fa-home"></i> Home</div>
+            <div class="col-md-5 mx-md-2 my-2 my-md-0 py-2" id="nexticon" onclick="more()"><i class="fas fa-arrow-left"></i> Previous</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 pt-3" id="copyright">
+                <i class="fas fa-copyright"></i> Developed by Vector
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- Java Script=--------------------------------------- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+
+
+<script>
+    var v1 = document.getElementById("tb1");
+    var v2 = document.getElementById("tb2");
+    var v3 = document.getElementById("tb3");
+
+
+    function submit() {
+        if (v1.value == "" || v2.value == "") {
+            alert("Please give your Name or Email");
+        } else {
+            sendemail();
+        }
+    }
+
+
+
+
+
+
+
+
+
+    function sendemail() {
+        if (v3.value == "") {
+            v3.value = "There no Comment";
+        }
+
+        alert("Sending Your Response To Vector Wait");
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "vectorcreation01@gmail.com",
+            Password: "site@001",
+            To: 'pjupadhyay60@gmail.com',
+            From: "vectorcreation01@gmail.com",
+            Subject: "Vector Creations",
+            Body: "Response from " + v1.value + "<br>" + "Name: " + v1.value + "<br>" + "Email: " + v2.value + "<br>" + "Comment: " + v3.value
+        }).then(
+            message => {
+                if (message == 'OK') {
+                    alert("Your response has been sent");
+                } else {
+                    console.error(message);
+                    alert("Some error came");
+                }
+            }
+        )
+
+
+    }
+
+
+
+
+    function backhome() {
+        window.location = "index.html"
+    }
+
+
+    function more() {
+        window.location = "information.html"
+    }
+
+
+    setTimeout(lod, 2000);
+    var pr = document.getElementById("loading");
+    var upr = document.getElementById("upper")
+
+    function lod() {
+        pr.style.display = "none";
+        upr.style.display = "block";
+
+    }
+</script>
+
+
+
+
+<!-- 
+    <
+    script >
+        var v1 = document.getElementById("tb1");
+    var v2 = document.getElementById("tb2");
+    var v3 = document.getElementById("tb3");
+
+    function submit() {
+
+        email.send({
+            Host: "smtp.gmail.com",
+            Username: "vectorcreation01@gmail.com",
+            Password: "site@001",
+            To: 'pjupadhyay60@gmail.com',
+            From: "vectorcreation01@gmail.com",
+            Subject: "Some body Just sent response",
+            Body: "And this is the body"
+        }).then(
+            message => alert("Send")
+        )
+    }
+</script> -->

@@ -1,0 +1,79 @@
+/* Loading */
+
+#loading {
+    width: 100%;
+    height: 100vh;
+    background: white url(load.gif) no-repeat center;
+    position: sticky;
+    top: 0%;
+    bottom: 0%;
+    z-index: 999;
+}
+
+#formcont1 {
+    background-color: dodgerblue;
+}
+
+#formcont2 {
+    background-color: dodgerblue;
+}
+
+#formcont3 {
+    background-color: dodgerblue;
+}
+
+#all label {
+    color: white;
+}
+
+input {
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    width: 200px;
+    border: solid 2px blue;
+}
+
+
+/* Footerrr */
+
+#footer {
+    height: fit-content;
+    background-color: blueviolet;
+    margin-top: 20%;
+}
+
+#footer #home {
+    color: white;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#homeicon {
+    background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#nexticon {
+    background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

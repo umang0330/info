@@ -1,0 +1,73 @@
+/* Loading */
+
+#loading {
+    width: 100%;
+    height: 100vh;
+    background: white url(load.gif) no-repeat center;
+    position: sticky;
+    top: 0%;
+    bottom: 0%;
+    z-index: 999;
+}
+
+#webdevelopment {
+    background-color: #686de0;
+    color: white;
+    border-radius: 15px;
+}
+
+#androiddevelopment {
+    background-color: #6ab04c;
+    color: white;
+    border-radius: 15px;
+}
+
+#ai {
+    background-color: #7ed6df;
+    color: white;
+    border-radius: 15px;
+}
+
+
+/* Footer------------------------------ */
+
+#footer {
+    height: fit-content;
+    background-color: blueviolet;
+    margin-top: 20%;
+}
+
+#footer #home {
+    color: white;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#homeicon {
+    background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#nexticon {
+    background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#previousicon {
+    color: white;
+    background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+#loading {
+    width: 100%;
+    height: 100vh;
+    background: white url(load.gif) no-repeat center;
+    position: sticky;
+    top: 0%;
+    bottom: 0%;
+    z-index: 999;
+}
+
+#image {
+    display: grid;
+    justify-content: right;
+}
+
+#info h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+}
+
+#info span {
+    font-weight: bolder;
+}
+
+#row2 {
+    display: grid;
+    place-items: center;
+}
+
+#footercont {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    bottom: 0%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: blueviolet;
+}
+
+.dnbtn {
+    background-color: slateblue;
+    color: white;
+    border: none;
+}
+
+
+/* Footer */
+
+#footer {
+    height: fit-content;
+    background-color: blueviolet;
+}
+
+#footer #home {
+    color: white;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#homeicon {
+    background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#nexticon {
+    background-color: darkviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

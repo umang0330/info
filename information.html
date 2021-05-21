@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <link rel="stylesheet" href="information.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web\css\all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        #upper {
+            background-color: #009432;
+            text-align: center;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            color: white;
+            display: none;
+            box-shadow: 0px 10px 19px 5px black;
+            border-bottom: 2px solid white;
+        }
+        
+        #upper .row h1 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loading"></div>
+
+
+    <!-- Main Content------------------------------------------------------ -->
+    <div class="container-fluid py-5 sticky-top" id="upper">
+        <div class="row">
+            <h1><i class="fas fa-ellipsis-v"></i> More</h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row" id="row1">
+            <div class="col-md-12 py-2" id="webdevelopment">
+                <h1><i class="fas fa-globe"></i> Web Development :</h1>
+                <p>Web development is the work involved in developing a Web site for the Internet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network
+                    services.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row mt-2" id="row2">
+            <div class="col-md-12 py-2" id="androiddevelopment">
+                <h1><i class="fab fa-android"></i> Android Development :</h1>
+                <p>Android software development is the process by which applications are created for devices running the Android operating system. Google states that[3] "Android apps can be written using Kotlin, Java, and C++ languages" using the Android
+                    software development kit (SDK), while using other languages is also possible.</p>
+            </div>
+        </div>
+
+        <div class="row mt-2" id="row3">
+            <div class="col-md-12" id="ai">
+                <h1><i class="fas fa-robot"></i> AI :</h1>
+                <p>Artificial intelligence (AI) is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals, which involves consciousness and emotionality. The distinction between the former and the latter categories
+                    is often revealed by the acronym chosen. 'Strong' AI is usually labelled as artificial general intelligence (AGI) while attempts to emulate 'natural' intelligence have been called artificial biological intelligence (ABI).</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer ------------------------------ -->
+
+
+
+    <div class="container-fluid clearfix  " id="footer">
+        <div class="row " id="home">
+            <div class="col-md-5 offset-md-1 py-2" onclick="backhome()" id="homeicon">
+                <i class="fas fa-home"></i> Home</div>
+            <div class="col-md-5 mx-md-2 my-2 my-md-0 py-2" id="nexticon" onclick="contactme()">
+                <i class="fas fa-arrow-right"></i> Next</div>
+        </div>
+
+        <div class="row mt-1 d-flex justify-content-center">
+            <div class="col-md-5 mx-md-2  py-2" id="previousicon" onclick="development()">
+                <i class="fas fa-arrow-left"></i> Previous</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 pt-3" id="copyright">
+                <i class="fas fa-copyright"></i> Developed by Vector
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    function backhome() {
+        window.location = "index.html"
+    }
+
+
+
+    function development() {
+        window.location = "development.html"
+    }
+
+    function contactme() {
+        window.location = "contactme.html"
+    }
+
+
+
+    setTimeout(lod, 2000);
+    var pr = document.getElementById("loading");
+    var upr = document.getElementById("upper")
+
+    function lod() {
+        pr.style.display = "none";
+        upr.style.display = "block";
+
+    }
+</script>

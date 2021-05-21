@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Creations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web\css\all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loading"></div>
+
+    <!-- Main Content---------------------------------------------------------------------- -->
+    <div class="container-fluid pb-4 pt-4 sticky-top " id="upper">
+        <div class="row">
+            <h1>VECTOR</h1>
+            <p><i class="fas fa-star"></i> CREATIONS <i class="fas fa-star"></i></p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-5 py-3" id="info" onclick="aboutme()">
+                <i class="fa fa-info "></i>
+                <h1>About Me</h1>
+
+            </div>
+
+            <div class="col-md-5 offset-md-2 my-3 my-md-0 py-3" id="info2" onclick="development()">
+                <i class="fas fa-laptop"></i>
+                <h1>Development</h1>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-md-3">
+            <div class="col-md-5 py-3" id="info3" onclick="more()">
+                <i class="fas fa-ellipsis-v"></i>
+                <h1>More</h1>
+            </div>
+
+            <div class="col-md-5 offset-md-2 my-3 my-md-0 py-3" id="info4" onclick="contactme()">
+                <i class="fas fa-id-badge"></i>
+                <h1>Contact Me</h1>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid clearfix" id="footer">
+
+
+        <div class="row">
+            <div class="col-md-12 pt-1" id="copyright">
+                <i class="fas fa-copyright"></i> Developed by Vector
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center" id="follow">
+                Follow me on
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center" id="social">
+                <i class="fab fa-instagram-square"></i> &nbsp
+                <i class="fab fa-facebook"></i>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function aboutme() {
+        window.location = "aboutme.html"
+    }
+
+    function development() {
+        window.location = "development.html"
+    }
+
+    function more() {
+        window.location = "information.html"
+    }
+
+    function contactme() {
+        window.location = "contactme.html"
+    }
+
+    setTimeout(lod, 1500);
+    var pr = document.getElementById("loading");
+    var upr = document.getElementById("upper")
+
+    function lod() {
+        pr.style.display = "none";
+        upr.style.display = "block";
+
+    }
+</script>
